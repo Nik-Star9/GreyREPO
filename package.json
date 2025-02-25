@@ -1,6 +1,23 @@
 {
+  "name": "grey-cms",
+  "version": "0.1.0",
+  "description": "Strapi CMS setup for GreyRiver",
+  "private": true,
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
   "dependencies": {
-    "pg": "^8.13.3",
-    "pg-hstore": "^2.3.4"
-  }
+    "@strapi/strapi": "^4.15.0",
+    "pg": "^8.11.0", 
+    "sqlite3": "5.1.6"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "license": "MIT"
 }
