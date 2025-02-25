@@ -1,5 +1,5 @@
 {
-  "name": "grey",
+  "name": "grey-repo",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -15,6 +15,7 @@
     "@strapi/plugin-users-permissions": "5.10.3",
     "@strapi/strapi": "5.10.3",
     "better-sqlite3": "11.3.0",
+    "pg": "^8.13.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
@@ -31,6 +32,6 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "46d8cc84-b288-44e1-ab24-2b0b5c9db1db"
+    "uuid": "ed2b6d96-8e89-4917-a2c7-dc0e915ae0e9"
   }
 }
