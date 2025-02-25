@@ -6,7 +6,7 @@ module.exports = ({ env }) => {
         client: isProduction ? 'postgres' : 'sqlite',
         connection: isProduction
           ? {
-              host: env('DATABASE_HOST', 'your-railway-host'),
+              host: env('DATABASE_HOST'),
               port: env.int('DATABASE_PORT', 5432),
               database: env('DATABASE_NAME', 'your-db-name'),
               user: env('DATABASE_USERNAME', 'your-db-user'),
