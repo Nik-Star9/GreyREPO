@@ -7,13 +7,14 @@
     "build": "strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
-    "start": "NODE_ENV=production strapi start",
+    "start": "strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.10.3",
     "@strapi/plugin-users-permissions": "5.10.3",
     "@strapi/strapi": "5.10.3",
+    "@strapi/utils": "^5.10.3",
     "better-sqlite3": "11.3.0",
     "pg": "^8.13.3",
     "react": "^18.0.0",
@@ -32,6 +33,6 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "ed2b6d96-8e89-4917-a2c7-dc0e915ae0e9"
+    "uuid": "fd4750e9-a678-48ad-b1a6-9a5e16331ef0"
   }
 }
