@@ -1,5 +1,5 @@
 {
-  "name": "grey-cms",
+  "name": "grey",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -14,8 +14,11 @@
     "@strapi/plugin-cloud": "5.10.3",
     "@strapi/plugin-users-permissions": "5.10.3",
     "@strapi/strapi": "5.10.3",
-    "pg": "^8.13.3",
-    "pg-hstore": "^2.3.4"
+    "better-sqlite3": "11.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -28,6 +31,6 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "0fadf6da-ce24-424d-be6c-93a67b15cf3b"
+    "uuid": "46d8cc84-b288-44e1-ab24-2b0b5c9db1db"
   }
 }
