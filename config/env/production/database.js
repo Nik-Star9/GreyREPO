@@ -1,15 +1,24 @@
-module.exports = ({ env }) => ({
-    connection: {
-      client: 'postgres',
+module.exports = ({ env }) => {
+    const isProduction = env('NODE_ENV') === 'production';
+  
+    return {
       connection: {
-        host: env('PGHOST', '127.0.0.1'),
-        port: env.int('PGPORT', 5432),
-        database: env('PGDATABASE', 'strapi'),
-        user: env('PGUSER', 'strapi'),
-        password: env('PGPASSWORD', 'password'),
-        ssl: env.bool(true),
+        client: isProduction ? 'postgres' : 'sqlite',
+        connection: isProduction
+          ? {
+              host: env('DATABASE_HOST', 'your-railway-host'),
+              port: env.int('DATABASE_PORT', 5432),
+              database: env('DATABASE_NAME', 'your-db-name'),
+              user: env('DATABASE_USERNAME', 'your-db-user'),
+              password: env('DATABASE_PASSWORD', 'your-db-password'),
+              ssl: env.bool('DATABASE_SSL', true),
+            }
+          : {
+              filename: env('DATABASE_FILENAME', '.tmp/data.db'),
+            },
+        useNullAsDefault: !isProduction,
+        debug: false,
       },
-      pool: { min: 0 }
-    },
-  });
+    };
+  };
   
